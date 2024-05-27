@@ -1,0 +1,49 @@
+<mvc:View controllerName="com.ign.employeedash.controller.employeeApp" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <Button text="Add Record" press="onOpenAddEmployeeDialog"></Button>
+        <FlexBox>
+            <Table items="{/employees}" >
+                <columns>
+                    <Column>
+                        <Label text="First Name"></Label>
+                    </Column>
+                    <Column>
+                        <Label text="Last Name"></Label>
+                    </Column>
+                    <Column>
+                        <Label text="Age"></Label>
+                    </Column>
+                    <Column>
+                        <Label text="Date of Birth"></Label>
+                    </Column>
+                    <Column>
+                        <Label text="Designation"></Label>
+                    </Column>
+                    <Column>
+                        <Label text="Designation"></Label>
+                    </Column>
+                </columns>
+                <ColumnListItem >
+                    <cells>
+                        <Text text="{firstName}"></Text>
+                    </cells>
+                     <cells>
+                        <Text text="{lastName}"></Text>
+                    </cells>
+                     <cells>
+                        <Text text="{age}"></Text>
+                    </cells>
+                     <cells>
+                        <Text text="{dateOfBirth}"></Text>
+                    </cells>
+                     <cells>
+                        <Text text="{designation}"></Text>
+                    </cells>
+                     <cells>
+                        <Text text="{department}"></Text>
+                    </cells>
+                </ColumnListItem>
+            </Table>
+        </FlexBox>
+    </Page>
+</mvc:View>

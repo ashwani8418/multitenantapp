@@ -1,0 +1,18 @@
+POST http://localhost:4004/odata/v4/emp-srv/employees
+Content-Type: application/json
+
+{
+  "email": "lisagrey@example.com",
+  "firstName": "Lisa",
+  "lastName": "Grey",
+  "age": 34,
+  "dateOfBirth": "1989-05-16",
+  "dateOfJoin": "2017-04-10",
+  "designation": "HR Manager",
+  "department": "Human Resources",
+  "contactNo": "+1234567890130"
+}
+
+
+
+

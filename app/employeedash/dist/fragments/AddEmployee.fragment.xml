@@ -1,0 +1,36 @@
+<core:FragmentDefinition xmlns:form="sap.ui.layout.form" xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog id="addEmployeeDialog" title="Add Employee" >
+        <content>
+            <VBox>
+                <form:SimpleForm>
+                   <form:content>
+                    <Label text="First Name" />
+                    <Input id="inputFirstName" value="{}" />
+                    <Label text="Last Name" />
+                    <Input id="inputLastName" value="{}"/>
+                    <Label text="Date of join"/>
+                    <DatePicker id="inputJoinDate" value="" valueFormat="yyyy-MM-dd" />
+                    <Label text="Date Of Birth" />
+                    <DatePicker id="dobInput" value="{}" valueFormat="yyyy-MM-dd"/>
+                    <Label text="Age"/>
+                    <Input id="inputAge" value="{}"/>
+                    <Label text="Email"/>
+                    <Input id="inputEmail" value="{}"/>
+                    <Label text="Designation" />
+                    <Input id="inputDesignation" value="{}" />
+                    <Label text="Department"/>
+                    <Input id="departmentInput" value="{}"/>
+                    <Label text="Contact No"/>
+                    <Input id="inputContactNo" value="{}"/>
+                </form:content>
+                </form:SimpleForm>
+            </VBox>
+        </content>
+        <beginButton>
+            <Button text="Save" press="onSaveEmployee" type="Emphasized"/>
+        </beginButton>
+        <endButton>
+            <Button text="Cancel" press="onCancel"/>
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>
