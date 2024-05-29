@@ -6,7 +6,6 @@
       "source": "^/odata/(.*)$",
       "target": "/odata/$1",
       "destination": "multitenantapp-srv-api",
-      "preferLocal" : true,
       "authenticationType": "xsuaa",
       "csrfProtection": false
     },
